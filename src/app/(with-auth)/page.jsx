@@ -116,7 +116,7 @@ function Home() {
     }
     function generateNO(num) {
         const zero = `${num < 10 ? '00' : ''}${num > 9 && num < 100 ? '0' : ''}${num === 100 ? '100' : ''}${num === 101 ? '001' : ''}`
-        return num != 101 && num != 100 ? 'NUMERO_' + zero + num : 'NUMERO_' + zero
+        return num != 101 && num != 100 ? '' + zero + num : '' + zero
     }
     const handlerSubmit = (e) => {
         e.preventDefault()
