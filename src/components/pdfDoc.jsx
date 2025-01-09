@@ -244,6 +244,9 @@ const PDF = ({ i }) => {
                             {i['velox'] && <Text style={{ ...styles.key, textAlign: 'center', }}>INMEDIATA VELOX</Text>}
 
 
+                            <Br />
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>lavavelox.com</Text>
+                            <Br />
 
                             {/* {(Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined) === undefined || Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined).length !== Object.values(i.servicios).length) && <div className='md:col-span-2'>
                                 <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-gray-800">Fecha y hora de recojo de prenda</label>
@@ -256,7 +259,7 @@ const PDF = ({ i }) => {
 
 
                             <Br />
-                     </View>
+                        </View>
                     </Page>
                     <Page size={227} style={{ boxSizing: 'border-box', padding: '2.5mm', position: 'relative' }}>
                         <View>
@@ -364,21 +367,18 @@ const PDF = ({ i }) => {
                             {i['fecha para recojo'] && i['fecha para recojo'] !== undefined && <Text style={{ ...styles.key, textAlign: 'center', }}>Fecha de entrega: {i['fecha para recojo']}</Text>}
                             {i['hora para recojo'] && i['hora para recojo'] !== undefined && <Text style={{ ...styles.key, textAlign: 'center', }}>Hora de entrega:{i['hora para recojo']}</Text>}
                             {i['velox'] && <Text style={{ ...styles.key, textAlign: 'center', }}>INMEDIATA VELOX</Text>}
+                            <Br />
 
 
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>lavavelox.com</Text>
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>Copia cliente</Text>
 
-                            {/* {(Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined) === undefined || Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined).length !== Object.values(i.servicios).length) && <div className='md:col-span-2'>
-                                <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-gray-800">Fecha y hora de recojo de prenda</label>
-                                {getDayMonthYearHourPluss3()}
-                            </div>}
-                            {Object.values(i.servicios).find(i => i.adicional && i.adicional !== null) !== undefined && <div>
-                                <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-gray-800">Fecha velox de prenda</label>
-                                <Input type="date" name="fecha para recojo" id="email" onChange={onChangeHandlerDate} defValue={state['fecha para recojo'] && state['fecha para recojo'] !== undefined ? formatDayMonthYearInput(state['fecha para recojo']) : ''} className="bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5    " placeholder="" require />
-                            </div>} */}
+                            <Br />
+
 
 
                             <Br />
-                         
+
 
                         </View>
                     </Page>
