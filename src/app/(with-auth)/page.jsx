@@ -111,7 +111,7 @@ function Home() {
     }
     const handlerLessVelox = (e) => {
         e.preventDefault()
-        e.stopPropagation()
+        e.stopPropagation()        
         setVelox(false)
     }
     function generateNO(num) {
