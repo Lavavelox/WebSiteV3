@@ -245,9 +245,10 @@ const PDF = ({ i }) => {
 
 
                             <Br />
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>Términos y Condiciones</Text>
                             <Text style={{ ...styles.key, textAlign: 'center', }}>lavavelox.com</Text>
                             <Br />
-
+                            <Br />
                             {/* {(Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined) === undefined || Object.values(i.servicios).filter(i => i.adicional && i.adicional !== null && i.adicional !== undefined).length !== Object.values(i.servicios).length) && <div className='md:col-span-2'>
                                 <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-gray-800">Fecha y hora de recojo de prenda</label>
                                 {getDayMonthYearHourPluss3()}
@@ -368,8 +369,7 @@ const PDF = ({ i }) => {
                             {i['hora para recojo'] && i['hora para recojo'] !== undefined && <Text style={{ ...styles.key, textAlign: 'center', }}>Hora de entrega:{i['hora para recojo']}</Text>}
                             {i['velox'] && <Text style={{ ...styles.key, textAlign: 'center', }}>INMEDIATA VELOX</Text>}
                             <Br />
-
-
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>Términos y Condiciones</Text>
                             <Text style={{ ...styles.key, textAlign: 'center', }}>lavavelox.com</Text>
                             <Text style={{ ...styles.key, textAlign: 'center', }}>COPIA CLIENTE</Text>
 

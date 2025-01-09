@@ -121,7 +121,7 @@ function Home() {
     const handlerSubmit = (e) => {
         e.preventDefault()
 
-        if (state.nombre !== undefined && state.whatsapp !== undefined ) {
+        if (state.nombre !== undefined && state.whatsapp !== undefined) {
             setPDF(true)
             const uuid = generateUUID()
             const data = {
@@ -183,12 +183,11 @@ function Home() {
         setUserCart({})
         setPdfDB(undefined)
         setPDF(false)
-        location.reload()
     }
 
     console.log(clientes)
     function autocompletar() {
-        
+
         const res = Object.values(clientes).find((i) => i.whatsapp === state.autocomplete)
 
 
@@ -362,19 +361,19 @@ function Home() {
                             </div>
 
                             <a href='#Services' className="hidden md:block mb-2 text-[16px] text-left font-medium text-gray-800"><Button type="button" theme="Transparent" >Atras</Button></a>
-                            
-                            
-                            {state.nombre && state.whatsapp && state.nombre !== undefined && state.whatsapp !== undefined && state.nombre !== '' && state.whatsapp !== ''
-                                    ? <a href='#Saldo' className="block mb-2 text-[16px] text-left font-medium text-gray-800" ><Button type="button" theme="Primary">Continuar</Button></a>
 
-                                    : <a href='#Client'
-                                        className={`block mb-2 text-[16px] text-left font-medium text-gray-800`}
-                                        onClick={handlerNext}><Button type="button" theme="Primary">Continuar</Button></a>
-                                }
-                            
+
+                            {state.nombre && state.whatsapp && state.nombre !== undefined && state.whatsapp !== undefined && state.nombre !== '' && state.whatsapp !== ''
+                                ? <a href='#Saldo' className="block mb-2 text-[16px] text-left font-medium text-gray-800" ><Button type="button" theme="Primary">Continuar</Button></a>
+
+                                : <a href='#Client'
+                                    className={`block mb-2 text-[16px] text-left font-medium text-gray-800`}
+                                    onClick={handlerNext}><Button type="button" theme="Primary">Continuar</Button></a>
+                            }
+
                         </form>
                     }
-                    
+
                     {
                         location.href.includes('#Saldo') &&
                         <form className={`w-full max-w-[450px] md:max-w-[600px]  mt-[15px] space-y-4 shadow-2xl bg-white rounded-[20px] px-5 py-10 md:grid md:grid-cols-2 md:gap-[5px]`} onSubmit={handlerSubmit}>
@@ -434,9 +433,15 @@ function Home() {
                             </div>
                             {pdf === false && <a href='#QR' className="hidden md:block mb-2 text-[16px] text-left font-medium text-gray-800"><Button type="button" theme="Transparent">Atras</Button></a>}
                             {pdf === false && <Button type="submit" theme="Primary">Registrar</Button>}
-                            {pdf && <a href='/#Services'>
-                                <Button type="button" theme="Danger" click={finish}>Finalizar</Button>
-                            </a>
+                            {pdf &&
+                                <a href='/#Services'
+                                    className="text-white bg-red-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-[16px] w-full min-w-[150px] px-2 py-3 text-center z-20"
+                                    // className="text-white bg-violet-700 hover:bg-violet-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center 
+                                    // "
+                                    onClick={finish}
+                                >
+                                    Finalizar
+                                </a>
                             }
                             {pdf && pdfDB && <InvoicePDF i={{ ...pdfDB }} />}
                         </form>
