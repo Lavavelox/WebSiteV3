@@ -145,7 +145,7 @@ const PDF = ({ i }) => {
                             <Text style={styles.textBold}>{i.direccionSucursal}</Text>
                             <Text style={{ ...styles.textBold, fontSize: '16px' }}>{(i['code']).replaceAll('NUMERO_', '')}</Text>
                             {/* <Text style={styles.text}>{i['code']}</Text> */}
-                            <Text style={styles.textItalic}>CONTACTOS 61278192 - 79588684</Text>
+                            <Text style={styles.textItalic}>CONTACTOS 71970206 - 79588684</Text>
                             <Text style={{ ...styles.key, textAlign: 'center', }}>LA PAZ - BOLIVIA</Text>
                             <Br />
                             <Text style={styles.textRight}>
@@ -270,7 +270,7 @@ const PDF = ({ i }) => {
                             <Text style={styles.textBold}>{i.direccionSucursal}</Text>
                             <Text style={{ ...styles.textBold, fontSize: '16px' }}>{(i['code']).replaceAll('NUMERO_', '')}</Text>
                             {/* <Text style={styles.text}>{i['code']}</Text> */}
-                            <Text style={styles.textItalic}>CONTACTOS 61278192 - 79588684</Text>
+                            <Text style={styles.textItalic}>CONTACTOS 71970206 - 79588684</Text>
                             <Text style={{ ...styles.key, textAlign: 'center', }}>LA PAZ - BOLIVIA</Text>
                             <Br />
                             <Text style={styles.textRight}>
@@ -371,7 +371,7 @@ const PDF = ({ i }) => {
 
 
                             <Text style={{ ...styles.key, textAlign: 'center', }}>lavavelox.com</Text>
-                            <Text style={{ ...styles.key, textAlign: 'center', }}>Copia cliente</Text>
+                            <Text style={{ ...styles.key, textAlign: 'center', }}>COPIA CLIENTE</Text>
 
                             <Br />
 
