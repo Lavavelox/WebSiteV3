@@ -161,7 +161,7 @@ function Home() {
 
             }
             const callback = (length) => {
-                const code = length !== undefined ? length : 1
+                const code = length !== undefined ? length -8 : 1
                 const callback2 = () => {
                     setModal('')
                     setPdfDB({ ...data, code: generateNO(code) })
